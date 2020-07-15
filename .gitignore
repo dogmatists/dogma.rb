@@ -9,3 +9,10 @@
 
 # Pandoc outputs
 *.html
+
+# Ruby artifacts
+.bundle
+.irb_history
+.yardoc
+Gemfile.lock
+*.gem
