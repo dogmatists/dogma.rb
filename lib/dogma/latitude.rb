@@ -1,10 +1,10 @@
 # This is free and unencumbered software released into the public domain.
 
 ##
-# An angle.
+# A latitude.
 #
-# @see https://dogma.dev/Angle/
-class Dogma::Angle
+# @see https://dogma.dev/Latitude/
+class Dogma::Latitude
   # @return [Float]
   attr_reader :radians
 
@@ -20,4 +20,4 @@ class Dogma::Angle
   def to_f
     self.radians
   end
-end # Dogma::Angle
+end # Dogma::Latitude
