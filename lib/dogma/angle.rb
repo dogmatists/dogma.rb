@@ -9,10 +9,16 @@ class Dogma::Angle
   attr_reader :radians
 
   ##
+  # @param  [Float] degrees
   # @param  [Float] radians
+  # @param  [Float] turns
   # @return [void]
-  def initialize(radians)
-    @radians = radians
+  def initialize(degrees: nil, radians: nil, turns: nil)
+    @radians = case
+      when radians then radians.to_f
+      when degrees then degrees.to_f / 180 * Math::PI
+      when turns then turns * 2 * Math::PI
+    end
   end
 
   ##
