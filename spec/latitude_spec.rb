@@ -13,8 +13,9 @@ RSpec.describe Dogma::Latitude do
 
   describe ".new(degrees)" do
     it "constructs the latitude from degrees" do
-      expect(Latitude.new(0).to_f).to eq(0)
-      expect(Latitude.new(90).to_f).to eq(0.5*Math::PI)
+      expect(Latitude.new(0).degrees).to eq(0)
+      expect(Latitude.new(-90).degrees).to eq(-90)
+      expect(Latitude.new(90).degrees).to eq(90)
     end
   end
 

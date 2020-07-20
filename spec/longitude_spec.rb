@@ -13,8 +13,9 @@ RSpec.describe Dogma::Longitude do
 
   describe ".new(degrees)" do
     it "constructs the latitude from degrees" do
-      expect(Longitude.new(0).to_f).to eq(0)
-      expect(Longitude.new(180).to_f).to eq(Math::PI)
+      expect(Longitude.new(0).degrees).to eq(0)
+      expect(Longitude.new(-180).degrees).to eq(-180)
+      expect(Longitude.new(180).degrees).to eq(180)
     end
   end
 
