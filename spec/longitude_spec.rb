@@ -5,6 +5,12 @@ require_relative '../lib/dogma'
 include Dogma
 
 RSpec.describe Dogma::Longitude do
+  describe ".new()" do
+    it "raises an ArgumentError" do
+      expect { Longitude.new }.to raise_error(ArgumentError)
+    end
+  end
+
   describe ".new(degrees)" do
     it "constructs the latitude from degrees" do
       expect(Longitude.new(0).to_f).to eq(0)

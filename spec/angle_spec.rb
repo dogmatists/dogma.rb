@@ -5,6 +5,12 @@ require_relative '../lib/dogma'
 include Dogma
 
 RSpec.describe Dogma::Angle do
+  describe ".new()" do
+    it "raises an ArgumentError" do
+      expect { Angle.new }.to raise_error(ArgumentError)
+    end
+  end
+
   describe ".new(degrees: ...)" do
     it "constructs the angle from degrees" do
       expect(Angle.new(degrees: 0).to_f).to eq(0)

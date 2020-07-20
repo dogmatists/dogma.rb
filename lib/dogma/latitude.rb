@@ -13,6 +13,7 @@ class Dogma::Latitude < Dogma::Angle
   ##
   # @param  [Float, #to_f] degrees (-90..90)
   # @return [void]
+  # @raise  [ArgumentError] if `degrees` is out of bounds
   def initialize(degrees)
     degrees = degrees.to_f
     raise ArgumentError, "Latitude bounds are ±90°, but got #{degrees}°" if degrees.abs > MAX
