@@ -15,4 +15,4 @@ jobs:
       - name: Install dependencies
         run: bundle install
       - name: Run the test suite
-        run: bundle exec rspec
+        run: bundle exec rspec -w
