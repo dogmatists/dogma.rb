@@ -7,12 +7,15 @@ require_relative 'angle'
 #
 # @see https://dogma.dev/Latitude/
 class Dogma::Latitude < Dogma::Angle
+  MIN = -90
+  MAX = 90
+
   ##
-  # @param  [Float, #to_f] degrees
+  # @param  [Float, #to_f] degrees (-90..90)
   # @return [void]
   def initialize(degrees)
     degrees = degrees.to_f
-    raise ArgumentError, "Latitude bounds are ±90°, but got #{degrees}°" if degrees.abs > 90
+    raise ArgumentError, "Latitude bounds are ±90°, but got #{degrees}°" if degrees.abs > MAX
     super(degrees: degrees)
   end
 end # Dogma::Latitude
