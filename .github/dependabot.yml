@@ -1,12 +1,21 @@
+# See: https://docs.github.com/en/github/administering-a-repository/customizing-dependency-updates
 # See: https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates
 ---
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "daily"
-  - package-ecosystem: "bundler"
-    directory: "/"
+      interval: daily
+    reviewers:
+      - artob
+    assignees:
+      - artob
+  - package-ecosystem: bundler
+    directory: /
     schedule:
-      interval: "daily"
+      interval: daily
+    reviewers:
+      - artob
+    assignees:
+      - artob
