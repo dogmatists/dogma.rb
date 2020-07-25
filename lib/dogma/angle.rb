@@ -3,7 +3,7 @@
 ##
 # An angle.
 #
-# @see https://dogma.dev/Angle/
+# @see https://dogma.dev/Angle
 class Dogma::Angle
   ##
   # @param  [Float, #to_f] degrees
@@ -29,7 +29,7 @@ class Dogma::Angle
   end
 
   ##
-  # Returns the angle in degrees.
+  # The angle in degrees.
   #
   # @return [Float]
   def degrees
@@ -37,13 +37,13 @@ class Dogma::Angle
   end
 
   ##
-  # Returns the angle in radians.
+  # The angle in radians.
   #
   # @return [Float]
   attr_reader :radians
 
   ##
-  # Returns the angle in turns.
+  # The angle in turns.
   #
   # @return [Float]
   def turns

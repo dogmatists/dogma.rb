@@ -5,7 +5,7 @@ require_relative 'angle'
 ##
 # A latitude.
 #
-# @see https://dogma.dev/Latitude/
+# @see https://dogma.dev/Latitude
 class Dogma::Latitude < Dogma::Angle
   MIN_DEGREES = -90
   MAX_DEGREES = 90

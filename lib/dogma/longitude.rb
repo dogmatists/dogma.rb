@@ -5,7 +5,7 @@ require_relative 'angle'
 ##
 # A longitude.
 #
-# @see https://dogma.dev/Longitude/
+# @see https://dogma.dev/Longitude
 class Dogma::Longitude < Dogma::Angle
   MIN_DEGREES = -180
   MAX_DEGREES = 180

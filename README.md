@@ -31,9 +31,9 @@ require 'dogma'
 
 ### Classes
 
-- [`Dogma::Angle`](https://dogma.dev/Angle/)
-- [`Dogma::Latitude`](https://dogma.dev/Latitude/)
-- [`Dogma::Longitude`](https://dogma.dev/Longitude/)
+- [`Dogma::Angle`](https://dogma.dev/Angle)
+- [`Dogma::Latitude`](https://dogma.dev/Latitude)
+- [`Dogma::Longitude`](https://dogma.dev/Longitude)
 
 ## See Also
 
