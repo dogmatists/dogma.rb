@@ -4,6 +4,6 @@ gemspec
 group :development do
   gem 'rake'
   gem 'rspec'
-  gem 'rubocop', '~> 0.89.1', require: false
+  gem 'rubocop', '~> 1.27.0', require: false
   gem 'yard'
 end
